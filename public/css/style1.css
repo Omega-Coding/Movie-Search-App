@@ -1,0 +1,41 @@
+@font-face{
+	font-family: Droid;
+	src: url('../fonts/droid.otf');
+}
+
+html{
+	padding: 0;
+	margin: 0;
+	height: 100%
+	width: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: url('../imgs/launcher.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.title{
+	font-family: droid;
+	font-size: 6rem;
+	color: #fff;
+	text-align: center;
+}
+
+.custom-form{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.custom-button{
+	padding-top: 12px;
+}
+
+#btn{
+	width: 35%;
+}

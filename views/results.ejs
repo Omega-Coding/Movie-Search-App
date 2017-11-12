@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Movie Search App</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<% body.results.forEach(function(movie){ %>
+		<li><%= movie["original_title"] %></li>
+	<% }); %>
+</body>
+</html>
