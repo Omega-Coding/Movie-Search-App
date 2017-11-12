@@ -3,10 +3,27 @@
 <head>
 	<title>Movie Search App</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style2.css">
 </head>
 <body>
-	<% body.results.forEach(function(movie){ %>
-		<li><%= movie["original_title"] %></li>
-	<% }); %>
+	<div class="container">
+		<div class="row" style="display: flex; flex-wrap: wrap; text-align: center">
+			<% body.results.forEach(function(movie){ %>
+				<div class="col-md-3 col-sm-6">
+					<div class="thumbnail">
+						<img src=<%= img_url + movie["backdrop_path"]%> alt="Not Found">
+						<div class="caption">
+							<h4><%= movie["original_title"] %></h4>
+						</div>
+						<p>					
+							<a href="/results/+<%= movie.id %>" class="btn btn-primary">More Info</a>
+						</p>
+					</div>
+				</div>
+			<% }); %>
+		</div>
+	</div>
 </body>
 </html>
