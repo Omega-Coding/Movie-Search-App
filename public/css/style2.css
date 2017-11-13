@@ -1,3 +1,14 @@
+@font-face{
+  font-family: Droid;
+  src: url('../fonts/droid.otf');
+}
+
+body{
+	  background: #ff5f6d; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5f6d, #ffc371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .thumbnail img{
     width: 100%;
 }
@@ -5,7 +16,8 @@
 .thumbnail{
     padding: 10px;
     margin-bottom: 10px;
-    height: 100%;
+    background-color: transparent;
+    /* height: 100%; */
 }
 
 .thumbnail .caption {
@@ -14,4 +26,10 @@
   justify-content: space-between;
   height: 100%; */
   padding: 9px;
+}
+
+.title{
+  font-family: droid;
+  font-size: 6rem;
+  text-align: center;
 }

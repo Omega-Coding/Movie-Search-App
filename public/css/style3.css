@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body, html{
+	margin: 0;
+	padding: 0;
+    background: #ff5f6d; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5f6d, #ffc371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto Slab', serif;
+}
+
+#img{
+	float: left;
+	padding: 10px;	
+}
+
+h2{
+	text-align: center;
+	font-family: 'Roboto Slab';
+}
+
+p{
+	padding: 20px;
+}
+
+.container{
+	height: 80%;
+	margin-top: 5%;
+	border: 2px solid black;
+	position: relative;
+}
+
+.clear{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+a {
+	position: absolute;
+	bottom: 10px;
+}

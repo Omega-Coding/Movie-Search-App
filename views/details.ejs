@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Movie Search App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+	<div class="container">
+		<div id="img">
+			<img src="<%= img_url %>">
+		</div>
+		<h2><%= movie["original_title"] %></h2>
+		<h4>Release Date - <%= movie["release_date"] %></h4>
+		<h4>Runtime - <%= movie["runtime"] %> mins</h4>
+		<h4>IMDb Rating - <%= movie["vote_average"] %></h4>
+		<p>
+			<%= movie["overview"] %>
+		</p>
+		<a href="http://www.imdb.com/title/<%= movie['imdb_id']%>"><img src="../imgs/imdb.png" alt="IMDb Page"></a>
+	</div>
+	<div class="clear"></div>
+</body>
+</html>

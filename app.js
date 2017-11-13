@@ -38,7 +38,18 @@ app.get('/results', function(req, res){
 });
 
 app.get('/results/:id', function(req, res){
-	res.send("Result for an individual movie");
+	var api = "?api_key=793712055a84b83ce568eafcd712f272";
+	var url = "https://api.themoviedb.org/3/movie/"+req.params.id+api;
+	
+	request(url, function(err, response, body){
+		if(err) {
+			console.log(err);
+		} else if(res.statusCode === 200) {
+			var data = JSON.parse(body);
+			var img_url = "http://image.tmdb.org/t/p/w342" + data["poster_path"];
+			res.render("details", {movie: data, img_url: img_url});
+		}
+	});
 });
 
 app.listen(3000, function(){
