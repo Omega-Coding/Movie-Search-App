@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('./public'));
+var PORT = process.env.PORT || 3000;
 
 
 //Routes
@@ -52,6 +53,6 @@ app.get('/results/:id', function(req, res){
 	});
 });
 
-app.listen(3000, function(){
+app.listen(PORT, function(){
 	console.log("Movie Search app has started.");
 });

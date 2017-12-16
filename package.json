@@ -4,7 +4,7 @@
   "description": "An app showcasing info about your desired movie",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Shrey Sudan",
   "license": "ISC",
